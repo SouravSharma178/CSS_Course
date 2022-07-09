@@ -1,0 +1,45 @@
+<!-- grid is used to design a 2D-layout -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Introduction</title>
+    <style>
+    .container{
+        /*when we write display: grid; the container becomes a grid and all the items inside it are called child items*/
+        display: grid;
+         /*this syntax here means make the width of the first column as 300 px second as 110 px and third as 100px*/
+        /*grid-template-columns: 300px 110px 100px;*/
+         /* grid-template-columns: 300px auto 100px; */
+        /*this syntax can also be used instead*/
+        /*it means that we give the entire width in the ratio of 4 parts,1 part,1 part*/
+        /*grid-template-columns: 4fr 1fr 1fr;*/
+        /*this syntax here means that create 10 columns and automatically define their width*/
+        grid-template-columns: repeat(3, auto);
+        grid-gap: 2rem;
+    }
+    .item{
+        margin: 10px;
+
+        background-color: blanchedalmond;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="item" id="box1">This is Box 1</div>
+        <div class="item" id="box2">This is Box 2</div>
+        <div class="item" id="box3">This is Box 3</div>
+        <div class="item" id="box4">This is Box 4</div>
+        <div class="item" id="box5">This is Box 5</div>
+        <div class="item" id="box6">This is Box 6</div>
+        <div class="item" id="box7">This is Box 7</div>
+        <div class="item" id="box8">This is Box 8</div>
+        <div class="item" id="box9">This is Box 9</div>
+    </div>
+
+</body>
+</html>

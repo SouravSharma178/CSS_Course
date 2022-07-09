@@ -1,0 +1,77 @@
+<!-- Links and buttons -->
+<!-- This file is important and is concerned with how to add
+button and links to using css to the page -->
+<!-- It also shows us how to change the color of buttons when we
+hover over them -->
+<!-- button size can always be increased using padding property -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo selectors and more designing</title>
+    <style>
+        .container {
+            border: 3px solid rgb(228, 105, 105);
+            padding: 33px;
+            border-top-left-radius: 50px;
+            background-color: bisque;
+            margin: 33px auto;
+            width: 900px;
+
+        }
+
+        .btn {
+            background-color: rgb(226, 141, 37);
+            padding: 20px;
+            border: none;
+            /* This property makes sure that the cursor changes when hovering */
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 50px;
+        }
+
+        a {
+            /* text Decoration makes sure that the underline beneath the text disappears */
+            text-decoration: none;
+        }
+
+        /* This property will be used to change the color while hovering */
+        a:hover {
+            color: rgb(6, 6, 7);
+            /* background color of button change while hovering*/
+            background-color: rgb(226, 22, 33);
+        }
+
+        /* This is the property for visited links,once a link is visited the color of the button will change */
+        a:visited {
+            /* So once this button is clicked once the color of the button will turn yellow */
+            background-color: yellow;
+        }
+
+        a:active {
+            background-color: rgb(57, 22, 122);
+        }
+
+        .btn:hover {
+            background-color: white;
+            border: 2px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="cont1">
+        <h3>This is my heading</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus incidunt delectus inventore fugit,
+            quas at, excepturi harum alias expedita dolore numquam illo itaque. Esse dolores hic error laudantium cum
+            optio quidem incidunt numquam! Error?</p>
+        <a href="https://www.eyepad.in" class="btn">Read More</a>
+        <button class="btn">Contact Us</button>
+    </div>
+
+</body>
+
+</html>

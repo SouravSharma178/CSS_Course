@@ -1,0 +1,71 @@
+<!-- very important concept -->
+<!-- Whenever float property is applied then the parent color is overridden -->
+<!-- To solve this issue we will use the overflow:auto property<a></a> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation menu</title>
+    <style>
+        .navbar {
+            background-color: black;
+            border-radius: 20px
+        }
+
+        .navbar ul {
+            overflow: auto;
+        }
+
+        /* The navbar li command targets the lists under the navbar class */
+        .navbar li {
+            float: left;
+            /* List-style removes all the bullets,circles from the lists */
+            list-style: none;
+            padding: 10px;
+            margin: 10px 25px;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            color: white;
+
+        }
+
+        .navbar li a:hover {
+            color: red;
+            background-color: yellow;
+        }
+
+
+        div .search {
+            float: right;
+            padding: 5px 50px;
+            margin: 16px 30px;
+        }
+
+        .navbar input {
+            border-radius: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">About us</a></li>
+                <li><a href="">Contact us</a></li>
+                <div>
+                    <input type="text" class="search" name="search" id="search" placeholder="Search This website">
+                </div>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!-- There are 5 types of main positions in CSS
+1.Static(Default)
+2.Relative - change from its original position and will leave a gap
+3.Absolute - change from its parent position
+4.Sticky
+5.Fixed
+Difference b/w sticky and fixed
+(sticky will be fixed only till the end of the container, But fixed will be fixed until the end of web page.)
+6.Whenever we are using the property sticky/fixed we have to define the top attribute also to make it work
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning in CSS</title>
+    <style>
+        .container{
+            border: 3px solid blue;
+            height:4000px;
+        }
+    .box{
+          display: inline-block;
+          border:2px solid red;
+          width:150px;
+          height:150px;
+          margin:2px;
+        }
+        #box3{
+            /* Relative:Relative to its initial position and will leave a gap to its normal position*/
+            /* position:relative; */
+
+            /* absolute:Relative to initial/parent position of its container*/
+            /* position:absolute;
+            top:30px;
+            left:40px; */
+
+            /* Fixed:Scrollable element that is fixed at a certain position */
+
+            /* position: fixed;
+            bottom:4px;
+            right: 4px; */
+
+            position:sticky;
+            top:34px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">Chat With Us</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+</html>

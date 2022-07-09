@@ -1,0 +1,43 @@
+<!-- transitions refer to change of state ie from one state to another -->
+<!-- only properties that have continous values can be transitioned -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions</title>
+    <style>
+    #box{
+        display: flex;
+        height: 200px;
+        width: 200px;
+        background-color: aqua;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        transition-property: background-color;
+        transition-duration: 3s;
+        transition-timing-function: ease-in;
+        transition-delay: 1s;
+         /* to apply transitions on height andwidth we will use the property transition*/
+        transition: 5s;
+    }
+    #box:hover{
+        background-color: brown;
+        height: 200px;
+        width: 300px;
+        border-radius: 50px;
+        font-size: 30px;
+    }
+    </style>
+</head>
+<body>
+  <h3>This is CSS Transitions Tutorial</h3>
+  <div class="container">
+      <div id="box">
+       This is my Box
+      </div>
+  </div>
+</body>
+</html>

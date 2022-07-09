@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute & nth child pseudo Selectors</title>
+    <style>
+     .container{
+         border: 2px solid red;
+         display: block;
+         text-align: center;
+         margin: 10px;
+         padding: 10px;
+     }
+     .container form input {
+             margin: 10px;
+     }
+
+    [target='_blank']{
+           color: red;
+     }
+    .container ul li{
+        text-align: left;
+    }
+    div ul li:nth-child(3){
+        color:aqua;
+    }
+    div ul li:nth-child(even){
+        background-color: aquamarine;
+    }
+    div ul li:nth-child(odd){
+        color:rgb(81, 0, 255);
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <a href="https://www.google.com" target='_blank'>Go to Google </a>
+            <br>
+            <input type="text" placeholder="Enter your Name">
+            <br>
+            <input type="text" placeholder="Enter your password">
+        </form>
+        <ul>
+            <li>First</li>
+            <li>Second</li>
+            <li>Third</li>
+            <li>Fourth</li>
+        </ul>
+    </div>
+</body>
+</html>

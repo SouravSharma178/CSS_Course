@@ -1,0 +1,59 @@
+<!-- Borders and Backgrounds in CSS -->
+<!-- Anchor tag is html attribute while background image is
+a CSS attribute -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borders and Backgrounds</title>
+    <style>
+        #firstpara {
+            background-color: red;
+            height: 100px;
+            width: 455px;
+            border-width: 10px;
+            border-color: green;
+            border-style: solid;
+            border-radius: 10px;
+        }
+
+        #secondpara {
+            background-color: rgb(254, 255, 254);
+            height: 100px;
+            width: 455px;
+            border-top: 2px solid red;
+            border-right: 2px solid green;
+            border-left: 2px solid blue;
+            border-bottom: 2px solid yellow;
+            border-top-left-radius: 11px;
+            border-top-right-radius: 14px;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 24px;
+        }
+
+        #thirdpara {
+            height: 500px;
+            width: 455px;
+            background-image: url('https://cdn.vox-cdn.com/thumbor/ZWuVT7ttJrfK4JtGk8NhvdV1BdU=/0x0:3010x3712/1200x800/filters:focal(1114x467:1594x947)/cdn.vox-cdn.com/uploads/chorus_image/image/70196497/1355455362.0.jpg');
+            border: 2px solid red;
+            background-repeat: no-repeat;
+            /* repeat-x and repeat-y will make it repeat on x and y axis */
+            /* background-position: 192px 34px; */
+            background-position: top center;
+            border-radius: 100px;
+            /* background-position: bottom right; */
+            /* background-position: top center; */
+        }
+    </style>
+</head>
+<body>
+    <h3>This is the heading</h3>
+    <p id="firstpara">This is the first paragraph</p>
+    <p id="secondpara">This is the second paragraph</p>
+    <p id="thirdpara">This is the third paragraph</p>
+</body>
+
+</html>

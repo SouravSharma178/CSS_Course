@@ -1,0 +1,128 @@
+<!-- properties will be different for both flex container and flex item -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox Tutorial</title>
+    <style>
+        .main{
+            border: 2px solid red;
+            background-color: beige;
+          /*here we gave the display flex property to the main container */
+          /*here we initialized the container as a flex */
+        display: flex;
+        height: 600px;
+
+        /*Container Properties*/
+
+         flex-direction: row;
+         /*it is set to row by default,so the items inside containers will appear horizontally */
+
+         flex-direction: column;
+        /*When we set this to column,the items inside containers will appear vertically */
+
+        flex-direction: row-reverse;
+        /*When we set this to row-reverse,the items inside containers will appear as reverse rowed or will start from the right side */
+
+        flex-direction: column-reverse;
+
+        /*When we set this to column-reverse,the items inside containers will appear as reverse columned or will start from the bottom/down */
+
+        flex-direction: row;
+        /* setting the flex direction again to row*/
+
+
+
+        flex-wrap: wrap;
+        /* in order to make sure that our flex item in container wrap/squeeze or our responsive to any screen size then we use the above property and by default its attribute is no-wrap*/
+
+
+        /* to set both the flex direction and flex wrap we will use the property flex flow:row-reverse wrap*/
+
+
+
+        /* Now we will see the justify-content and its attributes*/
+        justify-content: center;
+        /* this will make all the items in the container come at the centre irespective of the screen size*/
+
+        justify-content: space-between;
+
+        /* this will make all the items in the container have even space between them without any margin from the right and left hand side*/
+
+        justify-content: space-evenly;
+
+         /* this will make all the items in the container have even space between them with margin from the right and left hand side*/
+
+
+         justify-content: space-around;
+
+        /* this will make all the items in the container have equal from their respective right and left hand side*/
+
+        align-items: center;
+
+        /*this will make the boxes vertically aligned in the centre
+        */
+
+        align-items: flex-end;
+
+         /*this will make the boxes aligned in the end of the main container
+        */
+
+        align-items: stretch;
+
+        /*this will allow the boxes to make spaces evenly for each other to enable responsiveness
+        */
+        }
+        .container{
+
+            border: 2px solid blue;
+            width: 200px;
+            margin: 10px;
+            box-sizing: border-box;
+            padding: 25px;
+        }
+        /* These are now all the properties for the items in the container*/
+        #box-1{
+           /* The order property determines the the position at which we want the box to appear*/
+           /* higher the order the later the box will appear*/
+         order: 50;
+
+         /* This property allows to shrink one item/box in the container and this item will shrink as and when we will increase the screen size*/
+         flex-shrink: 3;
+        }
+        #box-2{
+            order: 70;
+            /* This property allows to grow one item/box in the container and this item will grow as and when we will increase the screen size*/
+            /*flex-grow: 10;*/
+
+            flex-basis: 160px;
+            /* when flex-direction is set to row flex-basis: will control width */
+            /* when flex-direction is set to column flex-basis: will control height */
+
+        }
+        #box-3{
+            /*this will align the boxes at the centre start and end*/
+
+            /* flex: 2 2 230px; */
+
+
+            align-self: flex-start;
+            align-self: flex-end;
+            align-self: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is CSS Flexbox Tutorial</h1>
+    <div class="main">
+        <div class="container" id="box-1">Box1</div>
+        <div class="container" id="box-2">Box2</div>
+        <div class="container" id="box-3">Box3</div>
+        <div class="container" id="box-4">Box4</div>
+        <div class="container" id="box-5">Box5</div>
+        <div class="container" id="box-6">Box6</div>
+    </div>
+</body4
+</html>

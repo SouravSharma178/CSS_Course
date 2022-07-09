@@ -1,0 +1,73 @@
+<!-- this is the tutorial on animations -->
+<!-- we will learn animation by making a progress bar -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Animations & Keyframes</title>
+    <style>
+      .container {
+        width: 250px;
+        background-color: rgb(246, 238, 238);
+      }
+      .box {
+        width: 250px;
+        border: 2px solid;
+        border-radius: 50px;
+        background-color: rgb(172, 22, 22);
+        /*in order to apply animations we use the property animation-name and give the animation a name of our choice*/
+        position: relative;
+        animation-name: sourav;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        /*ease in means the slider will run slowly in the beginning and it will the rush after */
+        /*ease in means the slider will run fast in the beginning and will the slow down after*/
+        animation-timing-function: ease-out;
+        animation-delay: 3s;
+        /*animation-direction: reverse; will reverse the animation*/
+
+        /*!IMPORTANT*/
+        /*We can also define all the animation and its properties in one go*/
+
+        /* These properties can be set using this shorthand */
+        /* animation: animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-fill-mode; */
+        /* animation: harry 5s ease-in 1s 12 backwards; */
+      }
+
+      /*the below code can be activated to see a progess bar */
+      @keyframes sourav {
+        from {
+          width: 0px;
+        }
+        to {
+          width: 250px;
+        }
+      }
+      @keyframes sourav {
+        0% {
+          top: 0px;
+          left: 0px;
+        }
+        25% {
+          top: 250px;
+          left: 0px;
+        }
+        75% {
+          top: 250px;
+          left: 250px;
+        }
+        100% {
+          top: 0px;
+          left: 0px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">Box1</div>
+    </div>
+  </body>
+</html>

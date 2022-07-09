@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+      .container{
+          background-color: rgb(208, 127, 127);
+          font-size: larger;
+          text-align: center;
+          display: none;
+      }
+      @media (min-width:0px) and (max-width:300px){
+      #box1{
+           display:block;
+           background-color: red;
+      }
+    }
+      @media (min-width:300px) and (max-width:500px){
+      #box2{
+           display:block;
+           background-color: rgb(47, 0, 255);
+      }
+    }
+      @media (min-width:500px) and (max-width:1000px){
+      #box3{
+           display:block;
+           background-color: rgb(191, 255, 0);
+      }
+    }
+      @media (min-width:1000px) and (max-width:1200px){
+      #box4{
+           display:block;
+           background-color: rgb(238, 0, 255);
+      }
+    }
+    </style>
+</head>
+<body>
+ <div class="container" id="box1">Iphone</div>
+ <div class="container" id="box2">Ipad</div>
+ <div class="container" id="box3">IMac</div>
+ <div class="container" id="box4">Airport Screen</div>
+</body>
+</html>

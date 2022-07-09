@@ -1,0 +1,58 @@
+<!-- $ symbol is used to define box1,box2,box3.....and so on -->
+<!-- In Css the Default position is static -->
+<!-- Z index specifies which box will on the top of the other -->
+<!-- The Z index only works when the position is relative,fixed,sticky or absolute -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility & Z index</title>
+    <style>
+        .box {
+            width: 170px;
+            height: 170px;
+            border: 2px solid black;
+        }
+
+        #box-1 {
+            /*  The Z index only works when the position is relative,fixed,sticky or absolute  */
+            /* The value with the greater z index will stay at the top of other */
+            z-index: -50;
+            position: relative;
+            top: 49px;
+            background-color: green
+        }
+
+        #box-2 {
+            position: relative;
+            top: 34px;
+            z-index: -100;
+            /* Display none would remove the box and the space at the same time */
+            /* display:none; */
+            /* Visibility hidden means that the box will dissappear but the space would still be acquired */
+            /* visibility: hidden; */
+            background-color: red
+        }
+
+        #box-3 {
+            background-color: yellow
+        }
+
+        #box-4 {
+            background-color: blue
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="box-1"></div>
+    <div class="box" id="box-2"></div>
+    <div class="box" id="box-3"></div>
+    <div class="box" id="box-4"></div>
+
+</body>
+
+</html>

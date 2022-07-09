@@ -1,0 +1,97 @@
+<!--
+To centre a block element ,in this exampple a header which is a block element we will first set its width and then apply the property of margin auto
+<header> tag is used to design the header of the website like in that that tag we can use: logos, navigation, buttons etc.
+<h1> tag is used to define the some heading for an paragraph or content.
+We cannot set width of inline elements
+Images are by default inline elements
+Header is a block element
+Heading is also a block elements
+If an element is inline and if we need to centre it then we have to change its width
+then change its display to inline block
+ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS display Property</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      header {
+        margin: auto;
+        border: 2px solid rgb(233, 33, 33);
+        width: 1200px;
+      }
+
+      img {
+        display: block;
+        margin: auto;
+      }
+
+      h3 {
+        /* To make the design fully responsive
+         we use the text-align:center */
+        text-align: center;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        margin: auto;
+      }
+      .box {
+        border: 4px solid white;
+        background-color: rgb(243, 236, 236);
+        margin: 0px 16px;
+        box-sizing: border-box;
+        display: inline-block;
+        width: 30%;
+      }
+      .container {
+        margin: auto;
+        width: 1200px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="top">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/en/thumb/c/cc/Chelsea_FC.svg/50px-Chelsea_FC.svg.png"
+        alt=""
+      />
+      <h3>Welcome to My blog</h3>
+    </header>
+    <div class="container">
+      <div class="box">
+        <h4 class="heading">Heading</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam amet
+          illum quaerat fuga vitae possimus ad, culpa dicta eligendi illo
+          reiciendis nostrum rem, veritatis harum quod expedita at neque quos
+          itaque, pariatur repellendus facilis ipsa! Iste provident animi ut
+          nulla nihil accusantium rerum nobis.
+        </p>
+      </div>
+      <div class="box">
+        <h4 class="heading">Heading</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam amet
+          illum quaerat fuga vitae possimus ad, culpa dicta eligendi illo
+          reiciendis nostrum rem, veritatis harum quod expedita at neque quos
+          itaque, pariatur repellendus facilis ipsa! Iste provident animi ut
+          nulla nihil accusantium rerum nobis.
+        </p>
+      </div>
+      <div class="box">
+        <h4 class="heading">Heading</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam amet
+          illum quaerat fuga vitae possimus ad, culpa dicta eligendi illo
+          reiciendis nostrum rem, veritatis harum quod expedita at neque quos
+          itaque, pariatur repellendus facilis ipsa! Iste provident animi ut
+          nulla nihil accusantium rerum nobis.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
